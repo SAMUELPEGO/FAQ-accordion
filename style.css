@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "WorkSans";
+    src: url("assets/fonts/static/WorkSans-bold.ttf");
+    font-style:normal;
+  }
+:root {
+--White: hsl(0, 0%, 100%);
+--Lightpink: hsl(275, 100%, 97%);
+--Grayishpurple: hsl(292, 16%, 49%);
+--Darkpurple: hsl(292, 42%, 14%);
+}
+  
+* {
+    font-family: "WorkSans";
+   /* font-weight: bold; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 13px;
+    user-select: none;
+   
+  }
+body {
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+body > :first-child {
+  position: absolute;
+}
+body > :nth-child(2) {
+  position: absolute;
+}
+.container {
+  margin-top: 150px;
+  min-width: 310px;
+  width: 310px;
+  padding: 30px;
+  background: hsl(0, 0%, 100%);
+  position: relative;
+  border-radius: 2%;
+  box-shadow: 0px 0px 12px;
+  
+}
+.container div,header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+div p:nth-child(4) {
+  color: hsl(0, 0%, 50%);
+  line-height: 20px;
+}
+h2,p {
+  margin-bottom: 35px;
+}
+header p {
+  width: 80%;
+  font-size: 30px;
+}
+header {
+  align-content: center;
+}
+div img {
+  position: relative;
+  top: -19px;
+}
+
+header img {
+  width: 25px;
+  top: -7px;
+  margin: 0 20px 20px 0;
+}
+h2 {
+  width: 70%;
+}
+h2:hover {
+  color: hsl(292, 16%, 49%);
+  cursor: pointer;
+}
+.img_desktop {
+  display: none;
+}
+
+@media only screen and (min-width:375px) {
+  .img_mobile {
+    display: none;
+  }
+  .img_desktop {
+    display: block;
+  }
+
+}
+@media only screen and (min-width:600px) {
+  .container {
+    width: 450px;
+  }
+}
